@@ -1,10 +1,10 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI											
 	citation		Citation Metadata	https://dataverse.org/schema/citation/											
-#datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	title	Title	Full title by which the Dataset is known.	Enter title...	text	0		TRUE	FALSE	FALSE	FALSE	TRUE	TRUE		citation	http://purl.org/dc/terms/title
 	subtitle	Subtitle	A secondary title used to amplify or state certain limitations on the main title.		text	1		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		citation
 	alternativeTitle	Alternative Title	A title by which the work is commonly referred, or an abbreviation of the title.		text	2		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		citation	http://purl.org/dc/terms/alternative
-	alternativeURL	Alternative URL	A URL where the dataset can be viewed, such as a personal or project website.  	Enter full URL, starting with http://	url	3	<a href="#VALUE" target="_blank">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		citation	https://schema.org/distribution
+	alternativeURL	Alternative URL	A URL where the dataset can be viewed, such as a personal or project website.	Enter full URL, starting with http://	url	3	<a href="#VALUE" target="_blank">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		citation	https://schema.org/distribution
 	otherId	Other ID	Another unique identifier that identifies this Dataset (e.g., producer's or another repository's number).		none	4	:	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation
 	otherIdAgency	Agency	Name of agency which generated this identifier.		text	5	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	otherId	citation
 	otherIdValue	Identifier	Other identifier that corresponds to this Dataset.		text	6	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	otherId	citation
@@ -59,10 +59,10 @@
 	distributionDate	Distribution Date	Date that the work was made available for distribution/presentation.	YYYY-MM-DD	date	55		TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		citation
 	depositor	Depositor	The person (Family Name, Given Name) or the name of the organization that deposited this Dataset to the repository.		text	56		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		citation
 	dateOfDeposit	Deposit Date	Date that the Dataset was deposited into the repository.	YYYY-MM-DD	date	57		FALSE	FALSE	FALSE	TRUE	FALSE	FALSE		citation	http://purl.org/dc/terms/dateSubmitted
-	timePeriodCovered	Time Period Covered	Time period to which the data refer. This item reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected. Also known as span.		none	58	;	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	https://schema.org/temporalCoverage
+	timePeriodCovered	Time Period Covered	Time period to which the data refer. This item reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected. Also known as span.		none	58			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	https://schema.org/temporalCoverage
 	timePeriodCoveredStart	Start	Start date which reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected.	YYYY-MM-DD	date	59	#NAME: #VALUE 	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	timePeriodCovered	citation
 	timePeriodCoveredEnd	End	End date which reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected.	YYYY-MM-DD	date	60	#NAME: #VALUE 	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	timePeriodCovered	citation
-	dateOfCollection	Date of Collection	Contains the date(s) when the data were collected.		none	61	;	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation
+	dateOfCollection	Date of Collection	Contains the date(s) when the data were collected.		none	61			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation
 	dateOfCollectionStart	Start	Date when the data collection started.	YYYY-MM-DD	date	62	#NAME: #VALUE 	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	dateOfCollection	citation
 	dateOfCollectionEnd	End	Date when the data collection ended.	YYYY-MM-DD	date	63	#NAME: #VALUE 	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	dateOfCollection	citation
 	kindOfData	Kind of Data	Type of data included in the file: survey data, census/enumeration data, aggregate data, clinical data, event/transaction data, program source code, machine-readable text, administrative records data, experimental data, psychological test, textual data, coded textual, coded documents, time budget diaries, observation data/ratings, process-produced data, or other.		text	64		TRUE	FALSE	TRUE	TRUE	FALSE	FALSE		citation	http://rdf-vocabulary.ddialliance.org/discovery#kindOfData
@@ -84,12 +84,12 @@
 	subject	Arts and Humanities	D0	1											
 	subject	Astronomy and Astrophysics	D1	2											
 	subject	Business and Management	D2	3											
-	subject	Chemistry	D3	4
-	subject	Computer and Information Science	D7	5									
+	subject	Chemistry	D3	4											
+	subject	Computer and Information Science	D7	5											
 	subject	Earth and Environmental Sciences	D4	6											
-	subject	Engineering	D5	7
-	subject	Law	D8	8	
-	subject	Mathematical Sciences	D9	9																	
+	subject	Engineering	D5	7											
+	subject	Law	D8	8											
+	subject	Mathematical Sciences	D9	9											
 	subject	Medicine, Health and Life Sciences	D6	10											
 	subject	Physics	D10	11											
 	subject	Social Sciences	D11	12											
@@ -133,10 +133,10 @@
 	authorIdentifierScheme	LCNA		2											
 	authorIdentifierScheme	VIAF		3											
 	authorIdentifierScheme	GND		4											
-	authorIdentifierScheme	DAI		5
-	authorIdentifierScheme	ResearcherID		6
-	authorIdentifierScheme	ScopusID		7
-	language	Abkhaz		0
+	authorIdentifierScheme	DAI		5											
+	authorIdentifierScheme	ResearcherID		6											
+	authorIdentifierScheme	ScopusID		7											
+	language	Abkhaz		0											
 	language	Afar		1											
 	language	Afrikaans		2											
 	language	Akan		3											
@@ -242,8 +242,8 @@
 	language	Māori		103											
 	language	Marathi (Marāṭhī)		104											
 	language	Marshallese		105											
-	language	Mixtepec Mixtec		106									
-	language	Mongolian		107										
+	language	Mixtepec Mixtec		106											
+	language	Mongolian		107											
 	language	Nauru		108											
 	language	Navajo, Navaho		109											
 	language	Northern Ndebele		110											
